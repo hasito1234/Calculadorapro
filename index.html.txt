@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculadora ESO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="bg-white p-6 rounded shadow-md w-full max-w-md">
+    <h1 class="text-xl font-bold mb-4 text-center">Calculadora Básica</h1>
+    <input id="num1" type="number" placeholder="Número 1" class="w-full p-2 border rounded mb-2" />
+    <select id="operador" class="w-full p-2 border rounded mb-2">
+      <option value="+">Sumar</option>
+      <option value="-">Restar</option>
+      <option value="*">Multiplicar</option>
+      <option value="/">Dividir</option>
+    </select>
+    <input id="num2" type="number" placeholder="Número 2" class="w-full p-2 border rounded mb-2" />
+    <button onclick="calcular()" class="w-full bg-blue-600 text-white p-2 rounded">Calcular</button>
+    <p id="resultado" class="mt-4 text-center text-green-600 font-semibold"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
